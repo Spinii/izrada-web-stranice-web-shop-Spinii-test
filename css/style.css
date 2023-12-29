@@ -14,7 +14,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(0deg, #001135 0%, #000a20 50%, #00081a 100%);
+    background: linear-gradient(0deg, #844242 0%, #582c2c 50%, #2c1616 100%);
 
 }
 object{
@@ -123,6 +123,7 @@ section .header{
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
+    border-bottom: 1px solid #f0b5a3b6;
 }
 .products{
     display: flex;
@@ -147,7 +148,8 @@ section .header{
     transition: all 0.3s ease;
 }
 .products .product-card:hover{
-    border: 1px solid rgba(0, 6, 20, 0.855);
+    background-color: rgba(240, 240, 240, 0.781);
+    transform: scale(1.05);
 }
 
 
@@ -166,6 +168,7 @@ section .header{
     transition: all 0.3s ease;
 }
 .product-card a:hover{
+    transform: scale(1.05);
     color: #686868;
 }
 .product-card img{
@@ -177,6 +180,7 @@ section .header{
 
 .featured{
     background-color: white;
+    padding: 1rem 2rem;
 }
 .featured-content{
     display: flex;
@@ -184,7 +188,7 @@ section .header{
 }
 .featured img{
     display: flex;
-    width: 700px;
+    width: 650px;
     margin-right: 50px;
 }
 
@@ -199,7 +203,7 @@ section .header{
     left: -10px;
     z-index: 99;
     opacity: 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease;
 }
 .product-card .img-back{
     position: absolute;
@@ -207,7 +211,7 @@ section .header{
     left: 0;
     z-index: 99;
     opacity: 1;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .product-card:hover .img-top{
