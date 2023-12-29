@@ -15,9 +15,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(0deg, #001135 0%, #000a20 50%, #00081a 100%);
-    /* background: linear-gradient(0deg, rgba(226,164,145,1) 0%, rgba(240,181,163,1) 50%, rgba(226,164,145,1) 100%); */
-    /* background: linear-gradient(0deg, rgba(218,149,128,1) 0%, rgba(231,170,151,1) 25%, rgba(240,181,163,1) 50%, rgba(231,170,151,1) 75%, rgba(218,149,128,1) 100%); */
-    height: 100vh;
+
 }
 object{
     margin: 0;
@@ -106,8 +104,8 @@ object{
     transition: all 0.3s ease;
 }
 .btn2:hover{
-    background-color: #c5d2ff7a;
-    border-color: #cbd7ff;
+    background-color: #8ba6ff;
+    border-color: #8ba6ff;
 }
 .btn1:hover{
     background-color: #8ba6ff;
@@ -115,7 +113,7 @@ object{
 }
 
 .trending{
-    background-color: #f7f7f7;
+    background-color:white;
     padding: 1rem 6rem;
     margin: 0 auto;
 }
@@ -132,7 +130,6 @@ section .header{
     align-items: center;
     text-align: center;
     /* border: 1px solid #8ba6ff; */
-    background-color: #8ba6ff33;
     padding: 2rem;
     margin-bottom: 1rem;
 }
@@ -141,9 +138,8 @@ section .header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
-    background-color: #6596ffbd;
-    padding: 8rem 3rem 1rem 3rem;
+    color: black;
+    padding: 8rem 4rem 1rem 4rem;
     border: 1px solid transparent;
     border-radius: 10px;
     cursor: pointer;
@@ -151,9 +147,10 @@ section .header{
     transition: all 0.3s ease;
 }
 .products .product-card:hover{
-    background-color: #00184dda;
-    border: 2px solid rgba(196, 215, 255, 0.855);
+    border: 1px solid rgba(0, 6, 20, 0.855);
 }
+
+
 .product-card h4{
     font-weight: 300;
     margin-bottom: 1rem;
@@ -165,18 +162,15 @@ section .header{
     margin-bottom: 1rem;
 }
 .product-card a{
-    color: #ffffff;
+    color: black;
     transition: all 0.3s ease;
 }
 .product-card a:hover{
-    color: #dbdbdb;
+    color: #686868;
 }
 .product-card img{
-    position: absolute;
     margin-top: 20px;
-    top: 0;
-    left: -25px;
-    width: 235px;
+    height: 80px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -192,6 +186,36 @@ section .header{
     display: flex;
     width: 700px;
     margin-right: 50px;
+}
+
+.product-card{
+    position: relative;
+    display: inline-block;
+}
+
+.product-card .img-top{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.product-card .img-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-card:hover .img-top{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.product-card:hover .img-back{
+    opacity: 0;
 }
 
 .sub-header{
