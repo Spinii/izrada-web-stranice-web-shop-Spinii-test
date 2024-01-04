@@ -99,7 +99,7 @@ img{
     flex-direction: column;
     justify-content: space-between;
     color: black;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 1rem 2rem;
     margin: 1rem 1rem;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -108,7 +108,7 @@ img{
     transition: all 0.3s ease;
 }
 .products .product-card:hover{
-    background-color: rgba(240, 240, 240, 0.781);
+    background-color: rgba(236, 236, 236, 0.781);
     transform: scale(1.05);
 }
 
