@@ -64,10 +64,9 @@ img{
     flex-direction: column;
     align-items: center;
     margin: 0 1rem;
-    background-color: #b96666;
+    background: linear-gradient(0deg, #844242 0%, #582c2c 50%, #2c1616 100%);
     border-radius: 15px;
     border: 1px solid #844242;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.205);
     max-width: 15%;
 }
 
@@ -83,6 +82,8 @@ img{
 
 .profile-img img{
     object-fit: cover;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 .sub-header{
@@ -97,33 +98,37 @@ img{
 
 .story{
     width: 95vw;
-    padding: 0 2rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     align-items: center;
 }
 
 .story .header{
     color: #582c2c;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: auto;
     margin-bottom: 1rem;
 }
 
 .story p{
-    color: rgb(20, 20, 20);
+    color: black;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .story strong{
     color: #582c2c;
-    border-bottom: 1px solid #582c2c;
+    border-bottom: 1px solid white;
     font-size: 1.4rem;
 }
 
 .container{
-    width: 75vw;
+    width: 95vw;
+    border: 2px solid #582c2c;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
 }

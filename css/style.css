@@ -128,6 +128,10 @@ object{
     right: 45%;
     transform: translateY(-50%);
 }
+.trending .btn3:hover{
+    color: white;
+}
+
 section .header{
     margin-bottom: .5rem;
     color: black;
@@ -286,15 +290,17 @@ section .header{
     border: 1px solid inherit;
     transition: all 0.3 ease;
     margin-bottom: 2rem;
+    color: black;
 }
 .btn3 a{
     color: black;
 }
 
 .btn3:hover{
-    background-color: #f0b5a3;
-    border-color: #ffe6e6;
+    background-color: #844242;
+    border-color: #844242;
+    color: white;
 }
 .btn3 a:hover{
-    color: black;
+    color: white;
 }
