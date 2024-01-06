@@ -26,6 +26,30 @@ img{
     background-color:white;
     padding: .5rem 2rem;
 }
+.filter-option{
+    margin-bottom: .5rem;
+}
+
+.categories-filter :nth-child(5){
+    margin-bottom: .7rem;
+}
+
+.btn6{
+    padding: .2rem 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid #8ba6ff;
+    border-radius: 50px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn6:hover{
+    background-color: #8ba6ff;
+    border: 1px solid #8ba6ff;
+}
 
 .categories-menu{
     display: flex;
@@ -166,4 +190,12 @@ img{
 }
 .product-card:hover .img-back{
     opacity: 0;
+}
+
+.filter-option label{
+    cursor: pointer;
+}
+
+.filter-option input{
+    cursor: pointer;
 }
