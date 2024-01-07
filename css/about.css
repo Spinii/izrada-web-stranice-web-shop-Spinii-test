@@ -52,7 +52,12 @@ img{
 .meet-the-team{
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    max-width: 75vw;
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000044;
+    border: 1px solid #844242;
+    border-radius: 25px;
+    padding: 2rem 0;
 }
 
 .our-team{

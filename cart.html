@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <object>
+        <iframe src="../../partials/shopheader.html" width="100%" height="80px" class="auto-height-iframe"></iframe>
+    </object>
+    <header class="main">
+        <div class="cart">
+            <div class="cart-preview">
+                <div class="cart-title">
+                    <h2 class="header">Shopping Cart</h2>
+                    <h2 class="header">3 Items</h2>
+                </div>
+                <div class="cart-sub-titles">
+                    <h3 class="sub-header">Product Details</h3>
+                    <h3 class="sub-header">Quantity</h3>
+                    <h3 class="sub-header">Price</h3>
+                    <h3 class="sub-header">Total</h3>
+                </div>
+                <div class="cart-product-info">
+                    <div class="product-image">
+                        <img src="slike/product-detail-slike/rayban/rayban1/rayban1.png">
+                    </div>
+                    <div class="quantity-input">
+                        <a href="#"><i class="ri-subtract-line"></i></a>
+                        <input type="number" min="1" max="3" value="2" >
+                        <a href="#"><i class="ri-add-line"></i></a>
+                    </div>
+                    <p>118$</p>
+                    <p>236$</p>
+                </div>
+                <div class="cart-product-info">
+                    <div class="product-image">
+                        <img src="slike/naocale/prada/prada3.png">
+                    </div>
+                    <div class="quantity-input">
+                        <a href="#"><i class="ri-subtract-line"></i></a>
+                        <input type="number" min="1" max="3" value="1">
+                        <a href="#"><i class="ri-add-line"></i></a>
+                    </div>
+                    <p>118$</p>
+                    <p>118$</p>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="checkout-title">
+                    <h2 class="header">Order Summary</h2>
+                </div>
+                <div class="checkout-sub-titles">
+                    <h3 class="checkout-sub-header">Items 2</h3>
+                    <h3 class="checkout-sub-header">118$</h3>
+                </div>
+                <div class="checkout-form">
+                    <div class="shipping-info">
+                        <h3 class="checkout-sub-titles">Shipping</h3>
+                        <select name="shipping" id="shipping">
+                            <option value="freeshipping">Free Shipping 0$</option>
+                            <option value="fastshipping">Fast Shipping 5$</option>
+                            <option value="superexpressshipping">Super Express Shipping 15$</option>
+                        </select>
+                    </div>
+                    <div class="promo-info">
+                        <h3 class="checkout-sub-titles">Promo Code</h3>
+                        <input type="text" placeholder="Enter your code">
+                        <button class="btn btn1">Apply</button>
+                    </div>
+                    <div class="total">
+                        <h3 class="checkout-sub-header">Total Cost</h3>
+                        <h4 class="total-price">326$</h4>
+                    </div>
+                    <button class="btn btn2">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <object>
+        <iframe src="partials/footer.html" width="100%" height="200px" class="auto-height-iframe"></iframe>
+    </object>
+</body>
+</html>
