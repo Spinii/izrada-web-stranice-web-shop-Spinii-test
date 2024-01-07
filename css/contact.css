@@ -100,7 +100,23 @@ object{
     width: auto;
     text-align: left;
     height: 50vh;
+    margin-left: .5rem;
 }
+
+.tos{
+    display: flex;
+    flex-direction: row;
+}
+
+.tos input{
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.contact-form p{
+    font-size: .5rem;
+}
+
 .input{
     display: flex;
     flex-direction: column;
@@ -118,17 +134,13 @@ object{
 }
 .first-input{
     display: flex;
-    padding: 1rem 2rem;
 }
 textarea{
     border: none;
     border-bottom: 1px solid black;
     resize: none;
-    margin-left: 2rem;
 }
-.txt-msg{
-    margin-left: 2rem;
-}
+
 textarea:focus{
     outline: none;
 }

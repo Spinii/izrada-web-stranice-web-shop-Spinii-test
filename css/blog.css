@@ -55,6 +55,8 @@ object{
 .blog{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     background-color: white;
     padding: 2rem 2rem;
@@ -109,7 +111,7 @@ object{
 .post button{
     padding: .5rem 3rem;
     background-color: transparent;
-    border: 1px solid #8ba6ff;
+    border: 1px solid #844242;
     border-radius: 50px;
     color: black;
     font-weight: 600;
@@ -118,6 +120,17 @@ object{
 }
 
 .post button:hover{
-    background-color: #8ba6ff;
-    border-color: #8ba6ff;
+    background-color: #844242;
+    border-color: #844242;
+    color: white;
+}
+
+.pagination a{
+    color: rgb(104, 104, 104);
+    margin-right: .5rem;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover{
+    color: rgb(0, 0, 0);
 }

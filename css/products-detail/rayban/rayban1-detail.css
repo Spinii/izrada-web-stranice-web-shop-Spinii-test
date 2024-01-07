@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.auto-height-iframe{
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+object{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    max-width: 95vw;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+.product-detail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-images{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px 0 0 25px;
+    border: 2px solid #582c2c;
+    padding: .5rem .5rem;
+}
+.other-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.other-images img{
+    width: auto;
+    height: 50px;
+}
+
+.other-img{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.other-images .other-first{
+    border-radius: 25px 0 0 25px;
+}
+
+.main-image{
+    padding: 4rem 2rem;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: .5rem;
+    background-color: rgb(238, 238, 238);
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+}
+.main-image img{
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+}
+
+.header{
+    margin-bottom: .5rem;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid #844242;
+}
+
+.price-rating{
+    display: flex;
+    margin-bottom: 6rem;
+    flex-direction: column;
+}
+
+.rating{
+    color: rgb(236, 95, 0);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.price{
+    color: white;
+    font-size: 2rem; 
+}
+
+.product-info{
+    width: 600px;
+    max-width: 600px;
+    text-align: center;
+    background: linear-gradient(0deg, #582c2c 0%, #2c1616 100%);
+    border-radius: 0 25px 25px 0;
+}
+.product-info p{
+    font-size: 1.2rem;
+    color: rgb(207, 207, 207);
+}
+
+.btn{
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.main2{
+    padding: 1rem 2rem 4rem 1rem;
+}
+
+.warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background: #582c2c;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+.panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000021;
+    min-height:200px;
+    width:100%;
+    max-width:100dvw;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+  }
+.panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+.panel-title{
+    font-size:1.5em;
+    font-weight:bold;
+    margin-bottom: 1rem;
+  }
+
+.user-title{
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.user-rating{
+    color: rgb(236, 95, 0);
+    font-size: 1.2rem;
+}
+
+.panel p{
+    margin-bottom: 1rem;
+}
+
+.radio{
+    display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel{
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #844242;
+  }
