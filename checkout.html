@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <object>
+        <iframe src="../../partials/shopheader.html" width="100%" height="80px" class="auto-height-iframe"></iframe>
+    </object>
+    <header class="main">
+        <div class="checkout">
+            <div class="billing-payment">
+                <div class="billing-details">
+                    <form class="billing">
+                        <h2 class="header">Billing Details</h2>
+                        <div class="input">
+                            <label>First Name:</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input">
+                            <label>Last Name:</label>
+                            <input type="text" placeholder="Enter your surname" required>
+                        </div>
+                        <div class="input">
+                            <label>Email Adress:</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input">
+                            <label>Country</label>
+                            <select>
+                                <option value="croatia">Croatia</option>
+                                <option value="europe">Europe</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                        <div class="input input2">
+                            <div class="input">
+                                <label>State/Country:</label>
+                                <input type="text" placeholder="Enter your country" required>
+                            </div>
+                            <div class="input">
+                                <label>Zip/Postal Code:</label>
+                                <input type="number" placeholder="Enter your zip code" required>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="payment-details">
+                <form class="payment">
+                    <h2 class="header">Payment Details</h2>
+                    <div class="input input3">
+                        <input type="radio" checked>
+                        <label>Credit Card</label>
+                    </div>
+                    <div class="input">
+                        <label>Credit Card Number:</label>
+                        <input type="number" placeholder="Enter your credit card number" required>
+                    </div>
+                    <div class="input input2">
+                        <div class="input month-year">
+                            <label>Expiration Date:</label>
+                            <select>
+                                <option value="month" selected>Month</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                            </select>
+                            <select>
+                                <option value="year" selected>Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input input3">
+                        <input type="radio">
+                        <label>Paypal</label>
+                    </div>
+                    <div class="input tos">
+                        <input type="checkbox">
+                        <p>By checking this box, I confirm that I have read and agree to abide by the Terms and Conditions, Privacy Policy, and any other relevant policies governing the use of this service.</p>
+                    </div>
+                    <button class="btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <object>
+        <iframe src="partials/footer.html" width="100%" height="200px" class="auto-height-iframe"></iframe>
+    </object>
+</body>
+</html>
