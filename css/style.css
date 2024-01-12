@@ -16,16 +16,16 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(0deg, #844242 0%, #582c2c 50%, #2c1616 100%);
-
+    width: 100dvw;
 }
 object{
     margin: 0;
     padding: 0;
 }
 .main{
-    max-width: 95vw;
+    max-width: 95dvw;
     margin: auto;
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
     
@@ -35,6 +35,7 @@ object{
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin-top: 1rem;
     width: 100%;
     /* background-color: rgba(255, 0, 0, 0.226); */
 
@@ -303,4 +304,76 @@ section .header{
 }
 .btn3 a:hover{
     color: white;
+}
+
+
+
+@media (width < 1200px){
+    .main{
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+    }
+    .main-text{
+        margin-bottom: 1rem;
+    }
+    .main-img{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .img-frame{
+        height: 400px;
+    }
+    .circle{
+        width: 350px;
+        height: 350px;
+    }
+    .featured-content{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .featured img{
+        display: flex;
+        width: 350px;
+        margin-right: 0;
+    }
+    .main-text h1{
+        font-size: 3rem;
+    }
+
+}
+
+@media (width < 600px){
+
+    .img-frame{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+
+    .featured-content{
+        flex-wrap: wrap;
+    }
+    .main-text h1{
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+    .main-text h1 span{
+        font-size: 3rem;
+    }
+    .main-text p{
+        font-size: .8rem;
+    }
+    .products{
+        padding: .2rem;
+    }
+    .trending .btn{
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        right: 35%;
+        transform: translateY(-50%);
+    }
 }
