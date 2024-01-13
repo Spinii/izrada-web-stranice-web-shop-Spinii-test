@@ -210,3 +210,17 @@ object{
     color:#000;
     border-top: 3px solid #844242;
   }
+
+@media(width<1200px){
+    .product-info{
+        font-size: 50%;
+    }
+    .product-detail{
+        flex-wrap: wrap;
+    }
+}
+@media(width<600px){
+    .product-detail{
+        flex-wrap: wrap;
+    }
+}

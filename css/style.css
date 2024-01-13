@@ -16,7 +16,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(0deg, #844242 0%, #582c2c 50%, #2c1616 100%);
-    width: 100dvw;
 }
 object{
     margin: 0;
@@ -339,6 +338,9 @@ section .header{
     }
     .main-text h1{
         font-size: 3rem;
+    }
+    .main-text h1 span{
+        font-size: 5rem;
     }
 
 }

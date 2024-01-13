@@ -26,7 +26,7 @@ object{
     max-width: 95dvw;
     height: auto;
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .checkout{
@@ -63,59 +63,56 @@ object{
     max-width: 600px;
 }
 
-form{
-    background-color: rgb(240, 240, 240);
-    margin-right: 2rem;
-    padding: 1rem 2rem;
-}
-
-.payment-details{
-    width: 600px;
-    max-width: 600px;
-}
-
 .input2 input{
     width: 150px;
     margin-right: 1rem;
-    
 }
 
 .input2{
     flex-direction: row;
 }
 
-select{
+.input3 input{
+    width: 50px;
+}
+.payment-details{
+    width: 60%;
+    margin: 0 auto;
+}
+.payment-details p{
+    font-size: .8rem;
+}
+.payment select{
+    width: 75%;
     margin-bottom: .5rem;
 }
-
-.month-year{
-    display: flex;
-    flex-direction: row;
+.payment button{
+    padding: .5rem 3rem;
+    background-color: transparent;
+    border: 1px solid #8ba6ff;
+    border-radius: 50px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.payment button:hover{
+    background-color: #844242;
+    border-color: #844242;
+    color: white;
 }
 
-.month-year label{
-    margin-right: 1rem;
-}
 
-.month-year select{
-    width: 100px;
-    margin-right: 1rem;
+@media(width<1200px){
+    .checkout{
+        flex-wrap: wrap;
+    }
 }
-
-.input3{
-    flex-direction: row;
-}
-.input3 label{
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.tos{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3rem;
-}
-
-.tos p{
-    font-size: .5rem;
+@media(width<600px){
+    .checkout{
+        font-size: 80%;
+    }
+    .payment-details p{
+        font-size: .5rem;
+    }
 }

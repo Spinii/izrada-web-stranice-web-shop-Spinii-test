@@ -78,7 +78,7 @@ img{
     background: linear-gradient(0deg, #844242 0%, #582c2c 50%, #2c1616 100%);
     border-radius: 15px;
     border: 1px solid #844242;
-    max-width: 15%;
+    max-width: 20%;
 }
 
 .profile-img{
@@ -147,4 +147,14 @@ img{
     border-radius: 25px;
     margin-bottom: 1rem;
     padding: 1rem 2rem;
+}
+
+@media (width < 1200px){
+    .our-team{
+        flex-wrap: wrap;
+    }
+    .team-card{
+        max-width: 50%;
+        margin-bottom: 1rem;
+    }
 }

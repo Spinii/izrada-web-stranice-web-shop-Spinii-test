@@ -24,7 +24,7 @@ object{
 .main{
     max-width: 85vw;
     margin: auto;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     text-align: center;
 }
 
@@ -158,4 +158,32 @@ textarea:focus{
     background-color: transparent;
     border: 1px solid #582c2c;
     color: black;
+}
+
+@media (width < 1200px){
+    .info{
+        font-size: 80%;
+    }
+
+    .our-info i{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .socials i{
+        font-size: 1rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (width < 600px){
+    .info{
+        font-size: 30%;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .our-info i{
+        font-size: .8rem;
+        margin: 0;
+    }
 }

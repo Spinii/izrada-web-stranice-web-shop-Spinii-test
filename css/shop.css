@@ -199,3 +199,10 @@ img{
 .filter-option input{
     cursor: pointer;
 }
+
+
+@media (width < 600px){
+    .line{
+        width: 50%;
+    }
+}
