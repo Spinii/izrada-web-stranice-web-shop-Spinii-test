@@ -320,7 +320,7 @@ section .header{
         margin-bottom: 1rem;
     }
     .img-frame{
-        height: 400px;
+        height: 350px;
     }
     .circle{
         width: 350px;
@@ -338,6 +338,10 @@ section .header{
     }
     .main-text h1{
         font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .main-text p{
+        margin-bottom: 1rem;
     }
     .main-text h1 span{
         font-size: 5rem;
