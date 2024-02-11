@@ -103,6 +103,6 @@ img{
     }
     
     .search-cart input {
-        width: 100%; /* Make the input full width */
+        width: 40%; /* Make the input full width */
     }
 }

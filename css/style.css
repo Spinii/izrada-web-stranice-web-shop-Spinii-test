@@ -202,7 +202,7 @@ section .header{
 .product-card .img-top{
     position: absolute;
     top: 0;
-    left: -10px;
+    left: 0;
     z-index: 99;
     opacity: 0;
     transition: all 0.2s ease;

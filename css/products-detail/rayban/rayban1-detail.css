@@ -33,56 +33,67 @@ object{
     justify-content: space-around;
 }
 
-.product-images{
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px 0 0 25px;
-    border: 2px solid #582c2c;
-    padding: .5rem .5rem;
-}
-.other-images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 700px;
-    height: 100px;
+.slider{
+    position: relative;
+    margin: auto;
+    width: 75%;
     overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.466);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
-.other-images img{
-    width: auto;
-    height: 50px;
+.slider img{
+    width: 75%;
+    height: 350px;
+    display: none;
+    object-fit: contain;
 }
-
-.other-img{
-    background-color: rgb(238, 238, 238);
+.slides{
+    padding: 2.5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem 3rem;
+    justify-content: center;
 }
-.other-images .other-first{
-    border-radius: 25px 0 0 25px;
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
-.main-image{
-    padding: 4rem 2rem;
-    width: 700px;
-    height: auto;
-    overflow: hidden;
-    margin-bottom: .5rem;
-    background-color: rgb(238, 238, 238);
-    border-radius: 25px 0 0 25px;
+.slider button{
     text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: rgba(66, 66, 66, 0.527);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.main-image img{
-    width: auto;
-    height: 200px;
-    object-fit: cover;
+
+.slider button:hover{
+    color: rgba(66, 66, 66, 0.712);
+}
+
+.slider button:active{
+    color: rgba(66, 66, 66, 0.884);
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
 }
 
 .header{
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     color: white;
     text-align: center;
     font-size: 2.2rem;
@@ -92,22 +103,90 @@ object{
 
 .price-rating{
     display: flex;
-    margin-bottom: 6rem;
     flex-direction: column;
+    align-content: space-between;
 }
 
 .rating{
     color: rgb(236, 95, 0);
-    margin-bottom: 2rem;
     font-size: 1.2rem;
 }
 
 .price{
     color: white;
-    font-size: 2rem; 
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+}
+
+
+.tos{
+    color: white;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+.rates{
+    font-size: 0.9rem;
+}
+
+.rates a{
+    color: white;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.size{
+    padding: .5rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.size option{
+    color: black;
+}
+
+.colors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color:nth-child(1){
+    background-color: rgb(153, 96, 9);
+}
+
+.color:nth-child(2){
+    background-color: rgb(148, 25, 25);
+}
+
+.color:nth-child(3){
+    background-color: rgb(26, 26, 26);
+}
+
+.color:nth-child(4){
+    background-color: rgb(109, 109, 109);
+}
+
+.color{
+    width: 50px;
+    height: 50px;
+    margin-right: .5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.603);
+    cursor: pointer;
 }
 
 .product-info{
+    height: 100%;
+    padding: 1rem;
     width: 600px;
     max-width: 600px;
     text-align: center;
@@ -115,7 +194,6 @@ object{
     border-radius: 0 25px 25px 0;
 }
 .product-info p{
-    font-size: 1.2rem;
     color: rgb(207, 207, 207);
 }
 
