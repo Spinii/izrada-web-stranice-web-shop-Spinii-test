@@ -24,9 +24,9 @@ object{
 
 .main{
     max-width: 95dvw;
-    height: auto;
+    height: 100dvh;
     margin: 0 auto;
-    padding: 1rem 3rem;
+    padding: 6rem 3rem;
 }
 
 .checkout{
