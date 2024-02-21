@@ -4,5 +4,5 @@ xhttpFooter.onload = function(){
     document.getElementById("footer").innerHTML = this.responseText
 }
 
-xhttpFooter.open("GET", "../partials/footer.html");
+xhttpFooter.open("GET", "partials/footer.html");
 xhttpFooter.send();
